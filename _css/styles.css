@@ -1,0 +1,220 @@
+/*-------------------------------------
+| Fonts
+-------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900);
+
+/*-------------------------------------
+| Clearfix
+-------------------------------------*/
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*-------------------------------------
+| Box Sizing
+-------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+/*-------------------------------------
+| core
+-------------------------------------*/
+/*body {
+
+	background-color: #fff; 
+	font-family: 'Roboto', sans-serif;
+}*/
+body { background-color: #e6e7e8; 	font-family: Helvetica, Arial, sans-serif; }*/
+#container {
+	width: 100%;
+	max-width: 960px;
+    margin: auto;
+	/*background-color: #eee;*/
+}
+.bi {
+	max-width: 800px;
+	height: 50px;
+}
+/*h2 {
+	width: auto;
+	height: 460px;
+}*/
+h1 { font-weight: 900; margin: 0px; }
+h3 { font-weight: 700; margin: 0px;  color: rgba(0,0,0,.5); }
+p { font-weight: 400; color: rgba(0,0,0,.5); margin: 0px 0px 15px; }
+
+/*-------------------------------------
+| parents
+-------------------------------------*/
+header#masthead 	{ background-color: #FFFFFF; padding: 50px 20px; font-size: 24px; text-align: center; }
+nav#mainmenu 		{ background-color: #fff; padding: 20px; }
+#main 				{ width: 100%; background-color: #fff; padding: 20px; }
+footer#closing 		{ background-color: #f1dfb8; padding: 20px; font-size: 12px; }
+
+/*-------------------------------------
+| Nav
+-------------------------------------*/
+nav#mainmenu { text-align: center; }
+nav#mainmenu a { 
+	opacity: .6;
+	display: inline-block; 
+	width: 150px;
+	line-height: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #a8987d; 
+	color: #e6e7e8;
+}
+nav#mainmenu a:hover { background-color: #73bf44;  }
+
+
+/*-------------------------------------
+| content
+-------------------------------------*/
+#main article  	{ background-color: #FFF; padding: 20px; float: left; width: 65%; }
+#main aside  	{ background-color: #7ea5af; padding: 20px; float: left; width: 35%; }
+
+/*-------------------------------------
+| form
+-------------------------------------*/
+
+form {
+	width: 100%;
+}
+
+form ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+form ul li {
+	margin: 15px 0;
+}
+
+form label {
+	display: block;
+	font-size: 2em;
+}
+
+form input, textarea, select {
+	font-size: 2em;
+	padding: 5px;
+	border: #ccc 3px solid;
+	width: 100%;
+}
+
+/*-------------------------------------
+| Database Output
+-------------------------------------*/
+
+.output_list {
+	margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    background-color: #ABA7A7;
+    padding: 1em;
+    font-size: 1.1em;
+}
+
+.image_db {
+	max-width: 100%;
+}
+
+/*-------------------------------------
+| closing
+-------------------------------------*/
+footer#closing {}
+footer#closing .contact,
+footer#closing .copy {
+	width: 50%;
+	float: left;
+	padding: 10px;
+}
+footer#closing .copy { text-align: right; }
+
+/*LIGHTBOX*/
+/*@import url(../_fonts/icomoon/style.css);
+body { background-color: #333; 	font-family: Helvetica, Arial, sans-serif; }*/
+
+/*main section {
+	min-height: 600px;
+	overflow: hidden;
+	background-color: #414042;
+}
+#main section:nth-of-type(even) { background-color: #55939D; }*/
+
+#lightboxcontainer { 
+	background-color: #6D6E71; 
+	color: #333;
+
+	width: 1000px;
+	height: 1200px;
+	padding: 25px;
+	margin: 25px auto;
+/*	border-radius: 10px;*/
+}
+#gallery { text-align: center;
+max-width: 100%
+}
+
+.item { 
+	width: 200px;
+	height: 135px;
+	border: solid 3px #A7A9AC;
+	display: inline-block;
+	margin: 10px;
+	overflow: hidden;
+
+}
+
+.item img {
+	width: 100%;
+}
+#dark{
+	display: none;
+	position: fixed;
+	left: 0px; right: 0px; bottom: 0px; top: 0px;
+	background-color: rgba(0,0,0,0.65);
+
+}
+
+#light{
+	position: fixed;
+	left: 0px; right: 0px; bottom: 0px; top: 0px;
+	background-color: #fff;
+	padding: 15px;
+	width: 900px;
+	height: auto;
+	margin: auto;
+}
+
+#light .close{
+	background-color: #dd0000;
+	font-size: 30px;
+	width: 60px;
+	line-height: 20px;
+	border-radius: 20px;
+	text-align: center;
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	/*box-shadow: -5px -5px 10px rgba(0,0,0,.4);*/
+
+}
+#light img{
+	width: 100%;
+}
+
+
+#login_container {
+    background-color:#F2F7F9;
+    width:665px;
+    padding:20px;
+    margin: 50px auto;    
+    border: 6px solid #8FB5C1;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    position:relative;
+}
